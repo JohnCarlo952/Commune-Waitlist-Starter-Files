@@ -73,6 +73,7 @@ body {
 .main__h1 {
   color: var(--HEADER-TXTCOLOR);
   padding: 1.5rem 2rem;
+  font-weight: 600;
 }
 
 .main__p {
