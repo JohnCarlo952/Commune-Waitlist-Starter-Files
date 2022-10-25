@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+
+/* || RESET */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* || VARIABLES */
+:root {
+  /* FONT */
+  --FF: "Nunito Sans", sans-serif;
+  --FS: clamp(1.25rem, 2vh, 2rem);
+  --FS-SM: clamp(1rem, 1.5vh, 1.75rem);
+
+  /* COLORS */
+  --BTN-BGCOLOR: #372865;
+  --HEADER-TXTCOLOR: #353252;
+  --COLOR: #545454;
+  --LINKS-COLOR: #c0b5dc;
+  --BGCOLOR: #f6f9fe;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--BGCOLOR);
+  font-size: var(--FS);
+  font-family: var(--FF);
+  padding: 0 1.5rem;
+}
+
+/* || HEADER */
+.header {
+  width: 100%;
+  padding: 2.5rem 0;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__ul {
+  display: none;
+}
+.header__nav .joinWaitlistBtn {
+  display: none;
+}
+
+/* || Main */
+.main__section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.main__learnMore {
+  color: var(--LINKS-COLOR);
+  text-align: center;
+  padding: 12px 7px;
+  border-radius: 50px;
+  background-color: var(--BTN-BGCOLOR);
+  font-size: clamp(0.75rem, 1.5vh, 1.75rem);
+}
+.main__learnMore a {
+  color: #f5f5f5;
+}
+.main__h1 {
+  color: var(--HEADER-TXTCOLOR);
+  padding: 1.5rem 2rem;
+}
+
+.main__p {
+  color: var(--COLOR);
+  font-size: clamp(1rem, 1.75vh, 2rem);
+}
+
+.main__form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.main__form input[type="email"] {
+  padding: 1rem 1rem;
+  border-radius: 7px;
+  border: 1px solid var(--COLOR);
+  background-color: rgba(245, 245, 245, 0.1);
+  outline: none;
+}
+
+.joinWaitlistBtn {
+  margin-top: 0.5rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  background-color: var(--BTN-BGCOLOR);
+  color: #f5f5f5;
+  font-size: var(--FS);
+  border-radius: 7px;
+}
+
+.main__section:last-child {
+  display: none;
+}
+
+/* || FOOTER */
+.footer {
+  padding: 1.25rem 0;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.footer__p {
+  color: var(--COLOR);
+  font-weight: 700;
+  font-size: var(--FS-SM);
+  margin-bottom: 0.75rem;
+}
